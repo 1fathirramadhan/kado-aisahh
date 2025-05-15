@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 700px;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #d63384;
+  }
+  
+  .photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    margin: 15px 0;
+  }
+  
+  .video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin: 20px 0;
+  }
+  
+  .intro, .message, .gift-text {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #bd2774;
+  }
+  
+  .hidden {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .heart {
+    font-size: 60px;
+    color: #e63946;
+    animation: pulse 1.2s infinite;
+    margin-top: 20px;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  .poem {
+    background-color: #ffeef8;
+    border-left: 5px solid #d63384;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .poem h2 {
+    color: #d63384;
+    margin-bottom: 15px;
+  }
+  /* SEMBUNYIKAN AWALNYA */
+.hidden {
+    display: none;
+  }
+  
+  /* Fade in efek untuk konten kejutan */
+  #surprise {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    display: none; /* pastikan sembunyi dulu */
+  }
+  
+  #surprise.show {
+    display: block; /* munculin */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* SEMBUNYIKAN AWAL */
+.hidden {
+    display: none;
+  }
+  
+  /* FADE IN KEJUTAN */
+  #surprise {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    display: none;
+  }
+  
+  #surprise.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ANIMASI HATI BERDETAK */
+  .heart {
+    font-size: 60px;
+    color: red;
+    animation: heartbeat 1s infinite;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+  
+  /* ANIMASI PUISI */
+  .poem {
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* BACKGROUND BERKILAU */
+  body {
+    background: linear-gradient(130deg, #fff0f6, #ffe8ec, #ffffff);
+    background-size: 400% 400%;
+    animation: shine 15s ease infinite;
+  }
+  
+  @keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
